@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://www.codemantri.in/favicon.ico' rel='icon' type='image/x-icon'/>
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <main>
+        <div class="registration-form">
+            <h3 class="form-title">Registration form</h3>
+            <form id="registrationForm">
+                <div class="validation-label">
+                    <label for="inputName">Full name:</label>
+                    <span class="validation-msg" id="nameErrorMsg">* Name should be alphabets only </span>
+                </div>
+                <input type="text" id="inputName" placeholder="Enter your full name" required>
+
+                <div class="validation-label">
+                    <label for="inputEmail">Email Id:</label>
+                    <span class="validation-msg" id="emailErrorMsg">* Enter a valid email </span>
+                </div>
+                <input type="email" id="inputEmail" placeholder="Enter your email address"required>
+
+                <div class="validation-label">
+                    <label for="inputMobileNo">Mobile Number:</label>
+                    <span class="validation-msg" id="mobileErrorMsg">* Enter a valid mobile number </span>
+                </div>
+                <input type="tel" id="inputMobileNo" placeholder="Enter your mobile number" required>
+
+                <div class="validation-label">
+                    <label for="inputAddress">Full Address:</label>
+                    <span class="letters-count" id="lettersCount"> 0 / 200 </span>
+                </div>
+                <textarea id="inputAddress" rows="3" placeholder="Enter your address" maxlength="200" required></textarea>
+
+                <p id="successMsg">Registration completed</p>
+                <button class="btn-submit" >Submit</button>
+            </form>
+
+            <p class="form-footer">Made with <span>❤</span> by <a href="http://www.codemantri.in" target="_blank">CodeMantri</a></p>
+        </div>
+
+    </main>
+</body>
+<script src="app.js"></script>
+
+</html>
