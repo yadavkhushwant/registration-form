@@ -9,7 +9,7 @@ body{
     font-family: 'Roboto', sans-serif; 
     background-color: #f1f6ff;
     margin: auto;
-    padding-top: 3%;
+    padding: 3%;
 }
 .form-title{
     text-align: center;
@@ -17,10 +17,16 @@ body{
 }
 .registration-form{
     margin: auto;
-    width: 400px;
+    width: 450px;
     background-color: white;
     padding: 1.2rem 1.8rem;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 500px) {
+    .registration-form{
+        width: 350px;
+    }
 }
 
 input, textarea{

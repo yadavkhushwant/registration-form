@@ -24,6 +24,10 @@ document.getElementById('registrationForm')
     if (!isNameValid || !isEmailValid || !isMobileValid) {
         return;
     }
+    if (inputAddress.value.length > 200) {
+        alert('Address should be 200 characters maximum');
+        return;
+    }
     
     inputName.value = '';
     inputEmail.value = '';
